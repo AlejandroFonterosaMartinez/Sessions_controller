@@ -1,15 +1,39 @@
-Esto es un ejemplo de control de sesiones por PHP, su funcionamiento:
--> 1 Te logueas en "login.php".
+# Control de Sesiones por PHP
 
--> 2 Tienes un tiempo de sesión estimado en este caso 20s y al terminar ese tiempo te sale una alerta con 2 opciones:
+Este es un ejemplo de control de sesiones utilizando PHP y JavaScript (con SWAL_FIRE). Este sistema permite mantener sesiones de usuario con un tiempo límite y proporciona opciones para manejar la sesión de manera eficiente.
 
-    -> 2.1  Cerrar sesión [Cierra la sesión directamente y te redirige a login.php]
+## Funcionamiento
 
-    -> 2.2  Continuar [Te redirige a login2.php, donde después de iniciar sesión te devuelve a la página donde estabas y te recarga el tiempo de la sesión].
+1. Iniciar Sesión:
+   - Para comenzar, inicia sesión en "login.php".
 
-    -> TEN EN CUENTA QUE HAY UN TIMER SI NO INTERACTUAS CON NINGUNA DE LAS 2 OPCIONES TE CERRARÁ SESIÓN AUTOMÁTICAMENTE.
+2. Duración de la Sesión:
+   - Una vez iniciada la sesión, tienes un tiempo de sesión estimado, en este caso, 20 segundos.
 
--> Lógica: [libreria_login.php]
--> Archivos Extras: [index.php | pruebas.php | pruebas2.php]
+3. Alerta de Sesión Expirada:
+   - Cuando el tiempo de sesión llega a su fin, aparecerá una alerta con 2 opciones:
 
-PHP & JS(SWAL_FIRE)
+     3.1. Cerrar Sesión:
+         - Cierra la sesión de usuario de manera inmediata y te redirige a "login.php".
+
+     3.2. Continuar:
+         - Te redirige a "login2.php", donde después de iniciar sesión nuevamente, te devuelve a la página donde estabas y reinicia el tiempo de la sesión.
+
+4. Temporizador de Sesión:
+   - Importante: Si no interactúas seleccionando ninguna de las opciones anteriores, la sesión se cerrará automáticamente.
+
+## Archivos y Lógica
+
+- La lógica principal se encuentra en el archivo `libreria_login.php`.
+- Otros archivos incluidos en este ejemplo:
+  - `index.php`: Página principal.
+  - `pruebas.php`: Página de pruebas.
+  - `pruebas2.php`: Otra página de pruebas.
+
+## Tecnologías Utilizadas
+
+Este proyecto utiliza PHP y JavaScript (SWAL_FIRE) para lograr el control de sesiones de usuario.
+(USO LIBRE) :)
+## Licencia
+
+Este proyecto se distribuye bajo la [Licencia MIT](LICENSE).
