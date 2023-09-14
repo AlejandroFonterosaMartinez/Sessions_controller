@@ -1,0 +1,15 @@
+Esto es un ejemplo de control de sesiones por PHP, su funcionamiento:
+-> 1 Te logueas en "login.php".
+
+-> 2 Tienes un tiempo de sesión estimado en este caso 20s y al terminar ese tiempo te sale una alerta con 2 opciones:
+
+    -> 2.1  Cerrar sesión [Cierra la sesión directamente y te redirige a login.php]
+
+    -> 2.2  Continuar [Te redirige a login2.php, donde después de iniciar sesión te devuelve a la página donde estabas y te recarga el tiempo de la sesión].
+
+    -> TEN EN CUENTA QUE HAY UN TIMER SI NO INTERACTUAS CON NINGUNA DE LAS 2 OPCIONES TE CERRARÁ SESIÓN AUTOMÁTICAMENTE.
+
+-> Lógica: [libreria_login.php]
+-> Archivos Extras: [index.php | pruebas.php | pruebas2.php]
+
+PHP & JS(SWAL_FIRE)
